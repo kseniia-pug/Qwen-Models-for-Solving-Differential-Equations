@@ -8,7 +8,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # Конфигурация
 MODEL_NAME = "Qwen/Qwen2.5-Math-1.5B"
-DATASET_PATH = "stratified_dataset.csv"
+DATASET_PATH = "test_data.csv"
 OUTPUT_CSV = "model_answers_qwen_orig.csv"
 
 # Промпт для модели
