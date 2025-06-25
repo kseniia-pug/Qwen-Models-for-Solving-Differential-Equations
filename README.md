@@ -6,23 +6,23 @@
 
 ```plaintext
 .
-├── data/                         # Датасеты для обучения и оценки
-│   ├── data_from_latex.csv
-│   ├── english_diffeq_dataset_big.csv.zip   # Большой датасет дифференциальных уравнений
-│   └── test_data.csv
-├── models/                       # Веса моделей
-│   └── qwen_math_finetuned/      # Веса дообученной модели
-├── scripts/                      # Рабочие скрипты
-│   ├── generate_data_from_latex.py    # Генерация датасета
-│   ├── Qwen_tuning.py            # Дообучение модели
-│   ├── quantize.py               # Квантизация модели
-│   ├── quantize_and_test.py      # Квантизация и тестирование
-│   └── use_quantized_model.py    # Использование квантизированной модели
-├── examples/                     # Примеры использования
-│   └── using_qwen_for_eq_solution.py
-├── metrics/                      # Оценка качества
-│   └── get_metrics_from_model_solution.py
-└── README.md                     # Документация проекта
+├── data/
+│ ├── data_from_latex.csv
+│ ├── english_diffeq_dataset_big.csv.zip
+│ └── test_data.csv
+│
+├── models/
+│ └── qwen_math_finetuned/
+│
+├── scripts/
+│ ├── generate_data_from_latex.py
+│ ├── Qwen_tuning.py
+│ ├── quantize_and_test.py
+│ ├── use_quantized_model.py
+│ └── get_metrics_from_model_solution.py
+│
+└── README.md
+└── using_qwen_for_eq_solution.py
 ```
 
 ## Использование
