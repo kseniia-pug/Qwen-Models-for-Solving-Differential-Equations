@@ -1,36 +1,32 @@
-# 🧮 Fine-tuned Qwen Math Solver
+# Fine-tuned Qwen Math Solver
 
-Исследование влияния дообучения и квантизации модели Qwen на решение дифференциальных уравнений [[2]]
+Исследование влияния дообучения и квантизации модели Qwen на решение дифференциальных уравнений
 
----
-
-## 📁 Project Structure
+## Структура проекта
 
 .
-├── data/ # Training & evaluation datasets
+├── data/ # Датасеты для обучения и оценки
 │ ├── data_from_latex.csv
-│ ├── english_diffeq_dataset_big.csv.zip # Large differential equations dataset
+│ ├── english_diffeq_dataset_big.csv.zip # Большой датасет дифференциальных уравнений
 │ └── test_data.csv
 │
-├── models/
-│ └── qwen_math_finetuned/ # Fine-tuned model weights
+├── models/ # Веса моделей
+│ └── qwen_math_finetuned/ # Веса дообученной модели
 │
-├── scripts/
-│ ├── generate_data_from_latex.py
-│ ├── Qwen_tuning.py # Model fine-tuning 
-
-│ ├── quantize.py # Model quantization
-│ ├── use_quantized_model.py
-│ └── quantize_and_test.py
+├── scripts/ # Рабочие скрипты
+│ ├── generate_data_from_latex.py # Генерация датасета
+│ ├── Qwen_tuning.py # Дообучение модели
+│ ├── quantize.py # Квантизация модели
+│ ├── quantize_and_test.py # Квантизация и тестирование
+│ └── use_quantized_model.py # Использование модели
 │
-├── examples/
-│ └── Using_qwen_for_eq_solution.py
+├── examples/ # Примеры использования
+│ └── using_qwen_for_eq_solution.py
 │
-└── metrics/
-└── get_metrics_from_model_solution.py
-```
-
----
+├── metrics/ # Оценка качества
+│ └── get_metrics_from_model_solution.py
+│
+└── README.md # Документация
 
 ## Использование
 
