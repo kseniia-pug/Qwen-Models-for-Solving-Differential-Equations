@@ -8,7 +8,7 @@ from tqdm import tqdm
 from multiprocessing import Pool, cpu_count
 
 # Конфигурация
-DATASET_PATH = "all.csv"
+DATASET_PATH = "data_from_latex.csv"
 OUTPUT_PATH = "english_diffeq_dataset.csv"
 NUM_NEW_SAMPLES = 50000
 SAVE_INTERVAL = 500
